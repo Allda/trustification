@@ -605,7 +605,7 @@ objects:
                 - name: GUAC_URL
                   value: http://guac-graphql:8080/query
                 - name: OIDC_PROVIDER_CLIENT_ID
-                  value: trusted-content-api
+                  value: ${OIDC_API_CLIENT_ID}
                 - name: OIDC_PROVIDER_CLIENT_SECRET
                   valueFrom:
                     secretKeyRef:
@@ -935,7 +935,7 @@ objects:
                 - name: SPOG_UI_CONFIG
                   value: /etc/config/spog-ui.yaml
                 - name: OIDC_PROVIDER_CLIENT_ID
-                  value: trusted-content-api
+                  value: ${OIDC_API_CLIENT_ID}
                 - name: OIDC_PROVIDER_CLIENT_SECRET
                   valueFrom:
                     secretKeyRef:
@@ -1029,7 +1029,7 @@ objects:
                 - name: ISSUER_URL
                   value: ${ISSUER_URL}
                 - name: CLIENT_ID
-                  value: trusted-content-frontend
+                  value: ${OIDC_SPOG_CLIENT_ID}
                 - name: SCOPES
                   value: openid email id.username api.trusted_content
                 - name: WRITE_KEY
@@ -1639,7 +1639,7 @@ objects:
                     - name: INFRASTRUCTURE_BIND
                       value: '[::]:9010'
                     - name: OIDC_PROVIDER_CLIENT_ID
-                      value: trusted-content-api
+                      value: ${OIDC_API_CLIENT_ID}
                     - name: OIDC_PROVIDER_CLIENT_SECRET
                       valueFrom:
                         secretKeyRef:
@@ -1710,7 +1710,7 @@ objects:
                       '
                   env:
                     - name: OIDC_PROVIDER_CLIENT_ID
-                      value: trusted-content-api
+                      value: ${OIDC_API_CLIENT_ID}
                     - name: OIDC_PROVIDER_CLIENT_SECRET
                       valueFrom:
                         secretKeyRef:
@@ -1794,7 +1794,7 @@ objects:
                     - name: INFRASTRUCTURE_BIND
                       value: '[::]:9010'
                     - name: OIDC_PROVIDER_CLIENT_ID
-                      value: trusted-content-api
+                      value: ${OIDC_API_CLIENT_ID}
                     - name: OIDC_PROVIDER_CLIENT_SECRET
                       valueFrom:
                         secretKeyRef:
@@ -1946,7 +1946,7 @@ objects:
                     - name: INFRASTRUCTURE_BIND
                       value: '[::]:9010'
                     - name: OIDC_PROVIDER_CLIENT_ID
-                      value: trusted-content-api
+                      value: ${OIDC_API_CLIENT_ID}
                     - name: OIDC_PROVIDER_CLIENT_SECRET
                       valueFrom:
                         secretKeyRef:
@@ -2099,6 +2099,10 @@ parameters:
   required: true
 - name: ISSUER_URL
   required: true
+- name: OIDC_API_CLIENT_ID
+  value: trusted-content-api
+- name: OIDC_SPOG_CLIENT_ID
+  value: trusted-content-frontend
 - name: CONFIG_NAME
   required: true
 - name: DOMAIN
