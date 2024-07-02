@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: grafana-dashboard-trustification
+  name: grafana-dashboard-atlas
   labels:
     grafana_dashboard: "true"
   annotations:
-    grafana-folder: /grafana-dashboard-definitions/Trusted-Content
+    grafana-folder: /grafana-dashboard-definitions/Atlas
 data:
-  trustification-performance.json: |
+  atlas-performance.json: |
     {
       "annotations": {
         "list": [
@@ -455,8 +455,8 @@ data:
           {
             "current": {
               "selected": false,
-              "text": "trustification-staging",
-              "value": "trustification-staging"
+              "text": "atlas-stage",
+              "value": "atlas-stage"
             },
             "datasource": {
               "type": "prometheus",
@@ -474,7 +474,7 @@ data:
               "refId": "StandardVariableQuery"
             },
             "refresh": 1,
-            "regex": "/trustification.*/",
+            "regex": "/atlas.*/",
             "skipUrlSync": false,
             "sort": 0,
             "type": "query"
@@ -487,12 +487,12 @@ data:
       },
       "timepicker": {},
       "timezone": "",
-      "title": "Trustification Performance",
+      "title": "Atlas Performance",
       "uid": "2n3ADXSIk",
       "version": 2,
       "weekStart": ""
     }
-  trustification-slos.json: |
+  atlas-slos.json: |
     {
       "annotations": {
         "list": [
@@ -952,8 +952,8 @@ data:
           {
             "current": {
               "selected": false,
-              "text": "trustification-staging",
-              "value": "trustification-staging"
+              "text": "atlas-stage",
+              "value": "atlas-stage"
             },
             "datasource": {
               "type": "prometheus",
@@ -971,7 +971,7 @@ data:
               "refId": "StandardVariableQuery"
             },
             "refresh": 1,
-            "regex": "/trustification.*/",
+            "regex": "/atlas.*/",
             "skipUrlSync": false,
             "sort": 0,
             "type": "query"
@@ -1010,7 +1010,7 @@ data:
         "type": "timepicker"
       },
       "timezone": "browser",
-      "title": "Trustification SLO",
+      "title": "Atlas SLO",
       "uid": "30wCDXIIz",
       "version": 1,
       "weekStart": ""
