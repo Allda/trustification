@@ -438,8 +438,8 @@ data:
           {
             "current": {
               "selected": false,
-              "text": "prometheus",
-              "value": "prometheus"
+              "text": "appsrep07ue1-prometheus",
+              "value": "appsrep07ue1-prometheus"
             },
             "hide": 0,
             "includeAll": false,
@@ -448,7 +448,7 @@ data:
             "options": [],
             "query": "prometheus",
             "refresh": 1,
-            "regex": "^app-sre-stage-01-prometheus|^app-sre-prod-01-prometheus|^prometheus",
+            "regex": "/appsre(s|p)07ue1-prometheus/",
             "skipUrlSync": false,
             "type": "datasource"
           },
@@ -933,8 +933,8 @@ data:
           {
             "current": {
               "selected": false,
-              "text": "prometheus",
-              "value": "prometheus"
+              "text": "appsrep07ue1-prometheus",
+              "value": "appsrep07ue1-prometheus"
             },
             "hide": 0,
             "includeAll": false,
@@ -944,7 +944,7 @@ data:
             "query": "prometheus",
             "queryValue": "",
             "refresh": 1,
-            "regex": "^app-sre-stage-01-prometheus|^app-sre-prod-01-prometheus|^prometheus",
+            "regex": "/appsre(s|p)07ue1-prometheus/",
             "skipUrlSync": false,
             "type": "datasource"
           },
