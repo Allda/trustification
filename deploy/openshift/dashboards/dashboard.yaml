@@ -488,7 +488,6 @@ data:
       "timepicker": {},
       "timezone": "",
       "title": "Atlas Performance",
-      "uid": "2n3ADXSIk",
       "version": 2,
       "weekStart": ""
     }
@@ -1011,7 +1010,6 @@ data:
       },
       "timezone": "browser",
       "title": "Atlas SLO",
-      "uid": "30wCDXIIz",
       "version": 1,
       "weekStart": ""
     }
